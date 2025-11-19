@@ -8,17 +8,17 @@ resource "aws_vpc" "main" {
   }
 }
 resource "aws_subnet" "sub-1" {
-  vpc_id     = aws_vpc.main.id
-  cidr_block = var.sub-1_cidr
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = var.sub-1_cidr
   availability_zone = "eu-north-1b"
   tags = {
     Name = var.sub-1_name
   }
 }
 resource "aws_subnet" "sub-2" {
-  vpc_id     = aws_vpc.main.id
+  vpc_id            = aws_vpc.main.id
   availability_zone = "eu-north-1a"
-  cidr_block = var.sub-2_cidr
+  cidr_block        = var.sub-2_cidr
   tags = {
     Name = var.sub-2_name
   }
