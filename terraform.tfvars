@@ -1,6 +1,6 @@
 aws_region          = "eu-north-1"
 vpc_cidr            = "11.0.0.0/16"
-vpc_name            = "jenkins-test-vpc"
+vpc_name            = "jenkin-test-vpc"
 sub-1_cidr          = "11.0.0.0/25"
 sub-2_cidr          = "11.0.0.128/25"
 sub-1_name          = "jenkins-sub"
