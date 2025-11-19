@@ -84,7 +84,7 @@ resource "aws_launch_template" "ec2" {
   }
   network_interfaces {
     associate_public_ip_address = true
-    security_groups             = [var.security_group_id]
+    security_groups             = [aws_security_group.sg-1.id]
   }
 }
 resource "aws_autoscaling_group" "asg" {
